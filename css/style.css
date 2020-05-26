@@ -86,6 +86,7 @@ BURGER
   z-index: 1;
   box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  z-index: 2;
 }
 .burger-open .fa-times {
   position: absolute;
@@ -95,12 +96,13 @@ BURGER
 }
 .overlay {
   background-color: #565656;
-  opacity: 0.9;
+  opacity: 0.5;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 1;
 }
 .menu-links {
   display: grid;
@@ -162,7 +164,8 @@ MAIN FRONT
 **************/
 
 .caravan-main-img,
-.cliff-img {
+.cliff-img,
+.terms-img {
   width: 100%;
   opacity: 60%;
   position: relative;
@@ -173,7 +176,10 @@ MAIN FRONT
 }
 .cliff-img {
   height: 750px;
-  position: relative;
+}
+.terms-img {
+  height: 500px;
+  width: 100vw;
 }
 
 .front-head-btn {
@@ -512,4 +518,54 @@ footer p,
 
 .display-none {
   display: none;
+}
+
+/*************
+ABOUT
+**************/
+
+.container.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  grid-gap: 3em;
+  align-content: center;
+  height: 85vh;
+}
+
+.about-txt p {
+  padding-top: 0.8em;
+}
+
+/*************
+TERMS
+**************/
+.container.terms {
+  display: grid;
+}
+
+.terms-top {
+  background-color: #fff0e0;
+  width: 100vw;
+  height: 250px;
+  display: grid;
+}
+.terms-top h1 {
+  margin: auto;
+}
+.terms-txt {
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 5em;
+}
+.topic-list {
+  padding-bottom: 5em;
+  text-align: center;
+}
+.topic-list ul {
+  list-style-type: none;
+  padding-top: 1em;
+}
+.topic-contents {
+  padding-bottom: 5em;
 }
